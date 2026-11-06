@@ -1,7 +1,8 @@
 name: dynatype
-description: Validate JSON objects, required fields, nested objects, and typed lists in Dart and Flutter with clear, path-based validation errors.
-version: 2.0.1
-homepage: https://pub.dev/packages/dynatype
+description: Simple, reusable JSON schemas for Dart and Flutter. Validate nested objects and lists with optional fields, nullable values, and precise errors.
+version: 2.1.0
+repository: https://github.com/chetanxpatil/dynatype
+issue_tracker: https://github.com/chetanxpatil/dynatype/issues
 documentation: https://pub.dev/documentation/dynatype/latest/
 topics:
   - json

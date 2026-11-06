@@ -2,6 +2,22 @@
 
 All notable changes to the DynaType package will be documented in this file.
 
+## 2.1.0
+
+- Add a reusable schema API: `Dyna.object`, `Dyna.list`, `Dyna.string`,
+  `Dyna.integer`, `Dyna.number`, `Dyna.boolean`, `Dyna.nullValue`, and `Dyna.any`.
+- Define nested objects and list elements inline, without root marker keys or
+  repeated `DynaType(key: ..., type: ...)` declarations.
+- Add independent `.optional()` and `.nullable()` modifiers.
+- Accept decoded data with `validate` / `check`, and JSON text with
+  `validateJson` / `checkJson` on any schema, including root arrays and scalars.
+- Return all failures with field paths, list indices, and stable error codes.
+  Throwing methods use `DynaValidationException`, a `FormatException` subtype.
+- Add strict object validation with `allowUnknownFields: false`.
+- Preserve the existing `DynaValidator` and `DynaType` API and behavior.
+- Simplify the quick start and add documentation for the original API.
+- Link package metadata to the restored GitHub repository.
+
 ## 2.0.1
 
 - Fix valid decoded objects being rejected for `Map<String, dynamic>` fields.

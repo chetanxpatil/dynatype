@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:dynatype/dynatype.dart';
 import 'package:test/test.dart';
 
-import '../example/dynatype_example.dart' as example;
+import '../example/legacy_example.dart' as example;
 
 void validateField(Object? value, Type type) {
   DynaValidator(
